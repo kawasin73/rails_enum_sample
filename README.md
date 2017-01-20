@@ -1,9 +1,6 @@
-# sample_docker_rails
+# rails_enum_sample
 
-docker-compose template for rails5
-
-Each branch ( `html`, `master` ) can be used.
-`master` branch is api mode.
+rails_enum sample
 
 Each commit message represents the executed command.
 
@@ -12,7 +9,6 @@ Each commit message represents the executed command.
 ```bash
 git clone git@github.com:kawasin73/sample_docker_rails.git
 cd sample_docker_rails
-git checkout api
 docker-compose up -d spring
 docker-compose exec spring rails db:create
 docker-compose exec spring rails db:migrate
