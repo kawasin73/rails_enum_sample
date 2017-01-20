@@ -13,7 +13,9 @@ Each commit message represents the executed command.
 git clone git@github.com:kawasin73/sample_docker_rails.git
 cd sample_docker_rails
 git checkout api
-docker-compose up -d
+docker-compose up -d spring
+docker-compose exec spring rails db:create
+docker-compose exec spring rails db:migrate
 ```
 
 ### How to install new gem
