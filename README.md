@@ -16,6 +16,7 @@ git checkout api
 docker-compose up -d spring
 docker-compose exec spring rails db:create
 docker-compose exec spring rails db:migrate
+docker-compose exec spring rails db:seed_fu
 ```
 
 ### How to install new gem

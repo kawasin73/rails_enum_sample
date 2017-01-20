@@ -16,4 +16,8 @@
 #
 
 class Item < ApplicationRecord
+  validates :title, presence: true
+
+  enum mode: { pending: 0, completed: 1, error: 2 }
+  enum category: { politics: 'Politics', economy: 'Economy', sports: 'Sports' }
 end
